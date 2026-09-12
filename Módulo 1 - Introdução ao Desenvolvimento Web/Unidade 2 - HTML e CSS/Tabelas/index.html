@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas</title>
+  </head>
+  <body>
+    <table border="1">
+      <caption>
+        Tabela de Compras
+      </caption>
+      <colgroup>
+        <col style="background-color: blanchedalmond;">
+        <col span="4" style="background-color: aquamarine;">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Categorias</th>
+          <th>Nome do Produto</th>
+          <th>Quantidade</th>
+          <th>Valor UNT</th>
+          <th>Valor Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th rowspan="3">Mercado</th>
+          <td>Algodão</td>
+          <td>10 und</td>
+          <td>1,00</td>
+          <td>10,00</td>
+        </tr>
+        <tr>
+          <td>Óleo</td>
+          <td>5 und</td>
+          <td>5,00</td>
+          <td>25,00</td>
+        </tr>
+        <tr>
+          <td>Arroz</td>
+          <td>3 und</td>
+          <td>5,00</td>
+          <td>15,00</td>
+        </tr>
+        <tr>
+          <th rowspan="2">Oficina</th>
+          <td>Óleo de motor</td>
+          <td>3 und</td>
+          <td>20,00</td>
+          <td>60,00</td>
+        </tr>
+        <tr>
+          <td>Óleo de motor</td>
+          <td>3 und</td>
+          <td>20,00</td>
+          <td>60,00</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="4">Total da compra</th>
+          <td>35,00</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
