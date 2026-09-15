@@ -1,0 +1,15 @@
+div {
+    width: 400;
+    background-color: blue;
+    padding: 20px;
+    margin: 60px;
+    border: 2px solid black;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.not-visible{
+    visibility: hidden;
+}
