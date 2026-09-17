@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.conteiner-global {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: lightgray;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  height: 120px;
+  background-color: brown;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.conteiner-main {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  background-color: blueviolet;
+  gap: 20px;
+}
+
+aside {
+  width: 200px;
+  height: 100%;
+  background-color: bisque;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  background-color: chartreuse;
+}
+
+.footer {
+  width: 100%;
+  height: 120px;
+  background-color: blue;
+}
