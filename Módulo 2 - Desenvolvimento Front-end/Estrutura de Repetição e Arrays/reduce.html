@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reduce</title>
+  </head>
+  <body>
+    <script>
+      // Reduce
+      const notas = [7.5, 8.6, 9.0, 10, 7.5, 10, 5.0, 4.0];
+      // const total = notas[0] + notas[1] + notas[2] + notas[3]
+
+      const total = notas.reduce(
+        (valorAcumulado, valorDoArray, posicao, array) => {
+          console.log("valorAcumulado", valorAcumulado);
+          console.log("valorDoArray", valorDoArray);
+          console.log("Posicao", posicao);
+          console.log("Array", array);
+
+          return valorAcumulado + valorDoArray;
+        },
+        0,
+      );
+      console.log(total);
+      console.log("Média: ", total / notas.length);
+      
+      console.log("PRODUTOS ------------");
+      const produtos = [
+        { id: 1, nome: "Mouse USB", quantidade: 10, valor: 39.99 },
+        { id: 2, nome: "Teclado USB", quantidade: 5, valor: 59.99 },
+        { id: 3, nome: "Monitor 34p", quantidade: 3, valor: 3569.99 },
+      ];
+
+      const totalProdutos = produtos.reduce(
+        (valorAcumulado, item, posicao, array) => {
+          return valorAcumulado + item.quantidade * item.valor;
+        },
+        0,
+      );
+      console.log("Total em Estoque: ", totalProdutos);
+    </script>
+  </body>
+</html>

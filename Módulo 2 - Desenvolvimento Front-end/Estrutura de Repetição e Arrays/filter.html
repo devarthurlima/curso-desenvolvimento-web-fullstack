@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter</title>
+  </head>
+  <body>
+    <script>
+      // Filter
+      //   const alunos = ["Ana", "Jose", "Caio"];
+      //   const alunosFiltrados = alunos.filter((nome, posicao, array) => {
+      //     if(nome.length > 3){
+      //         return nome
+      //     }
+      //     // console.log("Nome: " + nome);
+      //     // console.log("Posicao: " + posicao);
+      //     // console.log("Array: " + array);
+      //   });
+      //  console.log(alunosFiltrados)
+
+      const pessoas = [
+        {
+          nome: "Ana",
+          idade: 14,
+        },
+        {
+          nome: "Italo",
+          idade: 17,
+        },
+        {
+          nome: "Alice",
+          idade: 18,
+        },
+      ];
+
+      const pessoasAutorizadas = pessoas.filter((pessoa, posicao, array) => {
+        if (pessoa.idade >= 18) {
+          return pessoa;
+        }
+      });
+      console.log(pessoasAutorizadas);
+      console.log(pessoas);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+</head>
+<body>
+    <script>
+        // MAP
+        const alunos = ['Ana','José','Caio']
+        const alunosSobrenome = alunos.map((nome, posicao, array) => {
+            // console.log("Nome: ", nome)
+            // console.log("Posição: ", posicao)
+            // console.log("Array: ", array)
+            if(nome === "Ana"){
+                return nome + " Saraiva"
+            }
+            return nome + " Gomes"
+        })
+        console.log(alunosSobrenome)
+    </script>
+</body>
+</html>

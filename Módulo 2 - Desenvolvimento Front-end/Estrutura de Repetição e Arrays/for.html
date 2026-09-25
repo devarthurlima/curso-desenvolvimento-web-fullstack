@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For</title>
+  </head>
+  <body>
+    <script>
+      // 1. CRIE UM PROGRAMA QUE IMPRIMA DE 0 A 100 USANDO FOR
+      // 2. CRIE UM PROGRAMA QUE IMPRIMA DE 200 A 100 USANDO FOR
+      // 3. CRIE UM PROGRAMA QUE IMPRIMA DE 0 A 100 APENAS OS NÚMEROS PARES USANDO FOR
+
+      // QUESTÃO 1:
+      let contador = 0;
+      for (contador; contador <= 100; contador++) {
+        console.log("Q01 - ", contador);
+      }
+
+      //QUESTÃO 2:
+      for (let contador2 = 200; contador2 >= 100; contador2--) {
+        console.log("Q02 - ", contador2);
+      }
+
+      // QUESTÃO 3:
+      for (let contador3 = 0; contador3 <= 100; contador3++) {
+        if (contador3 % 2 == 0) {
+          console.log("Q01 - É par: ", contador3);
+        }
+      }
+    </script>
+  </body>
+</html>

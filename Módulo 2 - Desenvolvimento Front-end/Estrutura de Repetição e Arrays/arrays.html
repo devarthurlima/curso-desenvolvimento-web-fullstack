@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrays</title>
+  </head>
+  <body>
+    <script>
+      const alunos = ["Ana", "Max", "Jose"];
+
+      alunos.slice(1, 1);
+
+      console.log(alunos);
+
+      console.log(alunos[0]);
+      console.log(alunos[1]);
+      console.log(alunos[2]);
+
+      alunos[1] = "Marcia";
+      alunos[0] = "Rosangela";
+
+      alunos[3] = "Angelo";
+      alunos[4] = "Joao";
+
+      alunos.push("Waldir"); // adiciona no final
+      alunos.push("Wilisses");
+
+      alunos.unshift("Julia"); // adiciona no início
+      alunos.unshift("Carla");
+
+      alunos.pop(); // remove do final
+      alunos.shift(); // remove do início
+
+      // ARRAYS DE OBJETOS
+      const clientes = [
+        {
+          nome: "Cliente A",
+          email: "clienteA@gmail.com",
+        },
+        {
+          nome: "Cliente B",
+          email: "clienteB@gmail.com",
+        },
+        {
+          nome: "Cliente C",
+          email: "clienteC@gmail.com",
+        },
+      ];
+
+      console.log(clientes[0]);
+      const clienteB = clientes[1];
+
+      console.log(clienteB.nome);
+      console.log(clienteB.email);
+    </script>
+  </body>
+</html>
