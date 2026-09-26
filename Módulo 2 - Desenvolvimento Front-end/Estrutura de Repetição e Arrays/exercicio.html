@@ -6,10 +6,48 @@
     <title>Exercício Proposto</title>
 
     <style>
-        /* Falta estilizar */
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          sans-serif;
+
+        display: grid;
+        grid-template-columns: 80px 140px 100px;
+        gap: 6px 12px;
+        align-items: center;
+        max-width: fit-content;
+      }
+
+      label {
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: #475569;
+        grid-row: 1;
+      }
+
+      select {
+        grid-row: 2;
+        width: 100%;
+        padding: 8px 28px 8px 12px;
+        font-size: 0.95rem;
+        color: #1e293b;
+        background-color: #ffffff;
+        border: 1.5px solid #cbd5e1;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      select:hover {
+        border-color: #94a3b8;
+      }
+
+      select:focus {
+        border-color: #2563eb;
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+      }
     </style>
-  
-</head>
+  </head>
   <body>
     <label for="dia">Dia:</label>
     <select id="dia"></select>
