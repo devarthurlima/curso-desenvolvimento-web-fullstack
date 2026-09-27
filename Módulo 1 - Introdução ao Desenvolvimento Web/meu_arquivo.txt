@@ -1,1 +1,1 @@
-Teste de envio para o GitHub 
+Atividade de teste de envio para o GitHub usando o git.
