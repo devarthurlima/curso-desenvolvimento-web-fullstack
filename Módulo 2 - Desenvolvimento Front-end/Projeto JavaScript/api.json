@@ -1,8 +1,20 @@
 {
-    "tarefas":[
-        {
-            "titulo": "tarefa 1",
-            "descricao": "fazer tal coisa"
-        }
-    ]
+  "tarefas": [
+    {
+      "titulo": "Tarefa 1",
+      "descricao": "Dar aula",
+      "id": "UewjmVb74D0"
+    },
+    {
+      "titulo": "Tarefa 2",
+      "descricao": "Intervalo",
+      "id": "krTdGBQr9r4"
+    },
+    {
+      "titulo": "Tarefa 3",
+      "descricao": "teste",
+      "id": "mltAObMocFo"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
