@@ -7,7 +7,7 @@ Repositório dedicado aos projetos, atividades e anotações desenvolvidas ao lo
 ## 📚 Estrutura do Curso
 
 - [x] **Apresentação do Curso**
-- [ ] **Módulo 1:** Introdução ao Desenvolvimento Web
+- [X] **Módulo 1:** Introdução ao Desenvolvimento Web
 - [ ] **Módulo 2:** Desenvolvimento Front-end
 - [ ] **Módulo 3:** Back-end
 - [ ] **Módulo 4:** Testes Automatizados
