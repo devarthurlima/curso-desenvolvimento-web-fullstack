@@ -1,0 +1,50 @@
+body {
+  padding: 1em;
+  margin: 1em;
+  background-color: #121212;
+}
+
+.container {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 2.5em;
+  border: 1px solid #333333;
+  border-radius: 12px;
+  background-color: #181818;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 44px;
+}
+
+h2 {
+  font-weight: normal;
+  font-family: "Anton", sans-serif;
+  font-size: 2em;
+}
+
+p {
+  font-size: 110%;
+}
+
+.habilidades li {
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0.5em;
+}
+
+.habilidades ul {
+  padding-left: 1.2em;
+}
+
+.front {
+  color: #61dafb;
+}
+.back {
+  color: #4ade80;
+}
+.ferramentas {
+  color: #fb923d;
+}
