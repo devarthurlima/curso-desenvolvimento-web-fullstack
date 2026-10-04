@@ -12,7 +12,6 @@ const primereact = {
   theme: {
     preset: Aura,
   },
-  license: "PrimeUI-Commercial-Key...",
 };
 
 createRoot(document.getElementById("root")).render(
