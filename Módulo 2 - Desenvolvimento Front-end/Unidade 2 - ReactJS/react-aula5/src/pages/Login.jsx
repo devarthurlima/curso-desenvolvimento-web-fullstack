@@ -3,14 +3,32 @@ import { IconField } from "@primereact/ui/iconfield";
 import { Eye } from "@primeicons/react/eye";
 import { EyeSlash } from "@primeicons/react/eye-slash";
 import { Button } from "@primereact/ui/button";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { useForm } from "react-hook-form";
+import { Context } from "../contexts/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [mostrarSenha, setMostrarSenha] = useState(false);
 
+  const { register, handleSubmit } = useForm();
+
+  const { setLogado } = useContext(Context);
+  const navigate = useNavigate();
+
+  function logar(dados) {
+    if (dados.email == "arthurdeveloper@gmail.com" && dados.senha == "123456") {
+      setLogado(true);
+      navigate("/home");
+    }
+  }
+
   return (
     <div className="bg-primary-500 h-screen flex align-items-center justify-content-center px-3">
-      <form className="col-12 md:col-3 surface-0 p-3 border-round">
+      <form
+        onSubmit={handleSubmit(logar)}
+        className="col-12 md:col-3 surface-0 p-3 border-round"
+      >
         <h3 className="text-center text-xl">Seja Bem-Vindo!</h3>
         <label
           htmlFor="email"
@@ -23,6 +41,7 @@ const Login = () => {
           type="email"
           placeholder="email@email.com"
           className="mb-3 w-full"
+          {...register("email", { required: true })}
         />
 
         <label
@@ -38,6 +57,7 @@ const Login = () => {
               type={mostrarSenha ? "text" : "password"}
               placeholder="********"
               className="w-full"
+              {...register("senha", { required: true })}
             />
             <IconField.Inset>
               {mostrarSenha ? (
