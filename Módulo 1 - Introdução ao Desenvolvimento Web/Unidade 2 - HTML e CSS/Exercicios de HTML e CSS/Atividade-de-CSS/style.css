@@ -1,0 +1,35 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.cabeçalho {
+  background-color: #7a007b;
+  text-align: center;
+  padding: 5px;
+}
+
+.titulo {
+  color: white;
+}
+
+.banner-roxo {
+  background-color: #8e3cd9;
+  padding: 150px;
+}
+
+.conteudo-principal h2 {
+  padding: 60px;
+  text-align: center;
+}
+
+.conteudo-principal p {
+  text-align: center;
+  margin-left: 16px;
+  margin-right: 16px;
+  font-style: bold;
+}
+
+.equipe h2 {
+  text-align: center;
+}
