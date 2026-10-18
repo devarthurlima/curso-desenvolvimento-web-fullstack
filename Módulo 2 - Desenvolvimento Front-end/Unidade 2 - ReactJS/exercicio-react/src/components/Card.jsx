@@ -1,10 +1,12 @@
-const Card = () => {
-    return ( 
-        <>
-            <h2>Esse é um exemplo de card</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, veniam temporibus nam aliquid, expedita sunt facilis explicabo incidunt voluptatibus ipsa ad eius molestiae, quibusdam nesciunt accusamus obcaecati itaque? Rerum, dolores.</p>
-        </>
-     );
-}
- 
+const Card = ({ titulo, children }) => {
+  return (
+    <>
+      <div className="card">
+        <h2>{titulo}</h2>
+        <div className="card-conteudo">{children}</div>
+      </div>
+    </>
+  );
+};
+
 export default Card;
