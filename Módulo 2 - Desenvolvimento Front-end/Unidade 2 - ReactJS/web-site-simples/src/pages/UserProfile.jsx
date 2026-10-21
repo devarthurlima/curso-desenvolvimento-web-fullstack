@@ -1,3 +1,4 @@
+import { Link, useParams } from "react-router-dom";
 const UserProfile = () => {
   const { id } = useParams();
 

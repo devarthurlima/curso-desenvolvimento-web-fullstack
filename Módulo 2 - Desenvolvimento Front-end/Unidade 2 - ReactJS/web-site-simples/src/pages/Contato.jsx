@@ -5,19 +5,7 @@ const Contato = () => {
     <>
       <h1>CONTATO</h1>
       <p>Esta é a página de Contato.</p>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Início</Link>
-          </li>
-          <li>
-            <Link to="/sobre">Sobre</Link>
-          </li>
-          <li>
-            <Link to="/contato">Contato</Link>
-          </li>
-        </ul>
-      </nav>
+      <Link to="/">Voltar ao Início</Link>
     </>
   );
 };
