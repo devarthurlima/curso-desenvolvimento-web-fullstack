@@ -9,8 +9,8 @@ const UserProfile = () => {
         ID do utilizador: <strong>{id}</strong>
       </p>
 
-      <div style={{ marginTop: "1rem" }}>
-        <Link to="/user/1">Ver utilizador 1</Link> |{" "}
+      <div>
+        <Link to="/user/1">Ver utilizador 1</Link>
         <Link to="/user/99">Ver utilizador 99</Link>
       </div>
       <br />
