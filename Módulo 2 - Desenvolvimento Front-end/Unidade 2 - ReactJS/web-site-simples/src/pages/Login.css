@@ -1,0 +1,43 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 16px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.field label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.field input,
+.field .p-password,
+.field .p-password input {
+  width: 100%;
+}
+
+.login-form button {
+  width: 100%;
+  margin-top: 0.5rem;
+}

@@ -11,6 +11,7 @@ const UserProfile = () => {
 
       <div>
         <Link to="/user/1">Ver utilizador 1</Link>
+        {" | "}
         <Link to="/user/99">Ver utilizador 99</Link>
       </div>
       <br />

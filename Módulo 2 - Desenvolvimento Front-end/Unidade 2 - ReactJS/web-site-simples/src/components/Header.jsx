@@ -18,6 +18,9 @@ const Header = () => {
           <li>
             <Link to="/user/1">Perfil (ID: 1)</Link>
           </li>
+          <li>
+            <Link to="/login">Login</Link>
+          </li>
         </ul>
       </nav>
       <hr />
