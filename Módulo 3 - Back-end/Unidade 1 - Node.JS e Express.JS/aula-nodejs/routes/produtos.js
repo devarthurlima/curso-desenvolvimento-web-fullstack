@@ -1,5 +1,5 @@
-function listarProdutos() {
-  const produtos = [
+class Produtos {
+  static produtos = [
     {
       id: 1,
       nome: "Mouse USB",
@@ -11,13 +11,24 @@ function listarProdutos() {
       valor: 29.99,
     },
   ];
-  return produtos;
+
+  static listar() {
+    return Produtos.produtos;
+  }
+
+  static adicionar(id, nome, valor) {
+    Produtos.produtos.push({
+      id: id,
+      nome: nome,
+      valor: valor,
+    });
+  }
+
+  static editar(indice) {}
+
+  static excluir(indice) {
+    Produtos.produtos.splice(indice, 1);
+  }
 }
 
-function addProdutos() {}
-
-function aditarProdutos() {}
-
-function excluirProdutos() {}
-
-module.exports = listarProdutos;
+module.exports = Produtos;
