@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./FeedbackForm.css";
 
 export function FeedbackForm() {
   const [nome, setNome] = useState("");
@@ -26,10 +27,10 @@ export function FeedbackForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="form-container" onSubmit={handleSubmit}>
       <h2>Formulário de Feedback</h2>
 
-      <div>
+      <div className="input-group">
         <label htmlFor="nome">Nome:</label>
         <input
           id="nome"
@@ -40,7 +41,7 @@ export function FeedbackForm() {
         />
       </div>
 
-      <div>
+      <div className="input-group">
         <label htmlFor="email">E-mail:</label>
         <input
           id="email"
@@ -51,7 +52,7 @@ export function FeedbackForm() {
         />
       </div>
 
-      <div>
+      <div className="input-group">
         <label htmlFor="comentario">Comentário:</label>
         <textarea
           id="comentario"
@@ -62,7 +63,9 @@ export function FeedbackForm() {
         />
       </div>
 
-      <button type="submit">Enviar</button>
+      <button className="submit-btn" type="submit">
+        Enviar
+      </button>
     </form>
   );
 }
