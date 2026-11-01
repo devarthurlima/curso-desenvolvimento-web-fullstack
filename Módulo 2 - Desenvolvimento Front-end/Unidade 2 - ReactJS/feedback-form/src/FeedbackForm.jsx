@@ -5,8 +5,28 @@ export function FeedbackForm() {
   const [email, setEmail] = useState("");
   const [comentario, setComentario] = useState("");
 
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    if (!nome.trim() || !email.trim() || !comentario.trim()) {
+      alert("Por favor, preencha todos os campos antes de enviar.");
+      return;
+    }
+
+    alert(
+      `Feedback enviado com sucesso!\n\n` +
+        `Nome: ${nome}\n` +
+        `E-mail: ${email}\n` +
+        `Comentário: ${comentario}`,
+    );
+
+    setNome("");
+    setEmail("");
+    setComentario("");
+  }
+
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <h2>Formulário de Feedback</h2>
 
       <div>
