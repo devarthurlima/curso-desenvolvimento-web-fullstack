@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { ProductCard } from "./ProductCard";
 
-export default function ProductList() {
+export function ProductList() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -33,11 +34,11 @@ export default function ProductList() {
 
       <div className="grid">
         {products.map((product) => (
-          <div key={product.id} className="col-12 md:col-6 lg:col-4 p-2">
-            <div className="p-3 border-1 surface-border border-round">
-              <strong>{product.title}</strong>
-              <p className="text-primary font-bold mt-2">${product.price}</p>
-            </div>
+          <div
+            key={product.id}
+            className="col-12 sm:col-6 md:col-4 lg:col-3 p-2"
+          >
+            <ProductCard product={product} />
           </div>
         ))}
       </div>
