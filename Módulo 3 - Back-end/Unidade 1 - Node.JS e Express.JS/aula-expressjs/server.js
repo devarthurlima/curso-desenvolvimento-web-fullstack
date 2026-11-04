@@ -1,6 +1,6 @@
 const express = require("express");
-const UsuariosRotas = require("./routes/UsuariosRotas");
-const PostsRotas = require("./routes/PostsRotas");
+const RotasPrivadas = require("./routes/RotasPrivadas");
+const RotasPublicas = require("./routes/RotasPublicas");
 
 const host = "localhost";
 const port = 3000;
@@ -12,8 +12,11 @@ app.get("/", (request, response) => {
   return response.send("Olá, eu sou um Back-End com NodeJS + ExpressJS");
 });
 
-app.use(UsuariosRotas);
-app.use(PostsRotas);
+// ROTAS PUBLICAS
+app.use(RotasPublicas);
+
+// ROTAS PRIVADAS
+app.use(RotasPrivadas);
 
 app.get("/teste/:codigo", (request, response) => {
   // Querys
