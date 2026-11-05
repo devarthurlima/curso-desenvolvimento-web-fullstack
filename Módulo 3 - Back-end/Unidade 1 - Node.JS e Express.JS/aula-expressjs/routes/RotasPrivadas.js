@@ -1,5 +1,6 @@
 const express = require("express");
 const jwt = require("jsonwebtoken");
+require("dotenv").config();
 const UsuariosRotas = require("./UsuariosRotas");
 const PostsRotas = require("./PostsRotas");
 
@@ -11,7 +12,7 @@ RotasPrivadas.use((request, response, next) => {
     const { token } = request.headers;
 
     try {
-      jwt.verify(token, "ART23TFERSD@#");
+      jwt.verify(token, process.env.APP_KEY_TOKEN);
       auth = true;
     } catch (e) {
       return response.status(403).send(e);
