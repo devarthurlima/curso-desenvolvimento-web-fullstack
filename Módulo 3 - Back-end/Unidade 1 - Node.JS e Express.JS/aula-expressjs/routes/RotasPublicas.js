@@ -1,5 +1,7 @@
 const express = require("express");
 const AuthController = require("../controllers/AuthController");
+const jwt = require("jsonwebtoken");
+
 const RotasPublicas = express.Router();
 
 RotasPublicas.post("/login", (request, response) => {
@@ -7,8 +9,9 @@ RotasPublicas.post("/login", (request, response) => {
   const auth = new AuthController();
   const dados = auth.login(body.login, body.senha);
   if (dados) {
+    const token = jwt.sign(dados, "ART23TFERSD@#");
     return response.json({
-      token: dados,
+      token: token,
     });
   }
 

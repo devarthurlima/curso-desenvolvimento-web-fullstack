@@ -1,4 +1,5 @@
 const express = require("express");
+const jwt = require("jsonwebtoken");
 const UsuariosRotas = require("./UsuariosRotas");
 const PostsRotas = require("./PostsRotas");
 
@@ -6,8 +7,18 @@ const RotasPrivadas = express.Router();
 
 // Middleware
 RotasPrivadas.use((request, response, next) => {
-  console.log(request.headers.token);
-  if (request.headers.token !== "a1a2a3-a1a2a3") {
+  if (request.headers.token) {
+    const { token } = request.headers;
+
+    try {
+      jwt.verify(token, "ART23TFERSD@#");
+      auth = true;
+    } catch (e) {
+      return response.status(403).send(e);
+    }
+  }
+
+  if (auth === false) {
     return response.status(403).send("Não Autorizado");
   }
 
